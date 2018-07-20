@@ -14,22 +14,15 @@
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
 
-
-if  cat /etc/*-release |grep 'NAME="Ubuntu"'
+#blockport
+if  uname="Linux"
 then
-	echo "this is ubuntu "
-	#block an output port-9443  
-	sudo iptables -A INPUT -p tcp --dport $1 -j DROP
-elif cat /etc/*-release | grep 'NAME="Red Hat Enterprise Linux Server"'
-then
-	echo "this is redhat"
-	#block an output port-9443 
-	sudo iptables -A INPUT -p tcp --dport $1 -j DROP
-elif cat /etc/*-release | grep 'NAME="CentOS Linux"'
-then
-	echo "this is centos"
-	#block an output port-9443  
-	sudo iptables -A INPUT -p tcp --dport $1 -j DROP
+        echo "this is Linux"
+        #block an output port-9443
+        sudo iptables -A INPUT -p tcp --dport $1 -j DROP
+	echo "block port applied"
 else
-	echo "nothing matched"
+        echo "nothing matched"
+fi
+
 
