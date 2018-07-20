@@ -1,0 +1,2 @@
+terminate_instance scenario is to kill an instance while it is running.
+terminate_instance shell script on running will first check the Operating system which is been used and check whether the instance is running, if then it will terminate it.
