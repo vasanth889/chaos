@@ -21,5 +21,5 @@
 sudo pkill bash
 #kill /burn file
 sudo rm /burn
-sudo rm nohup.out
+
 
