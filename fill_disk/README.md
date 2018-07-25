@@ -16,7 +16,7 @@ NA
 ## Running the tests
 
 on running apply.sh, first it will check the Operating system which is been used and will fill disk.
-revert.sh will delete nohup.out file and the /burn file.
+revert.sh will delete the /burn file.
 
 ### How to Run
 
