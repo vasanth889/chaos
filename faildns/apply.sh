@@ -16,23 +16,9 @@
 
 #OS check
 
-if  cat /etc/*-release |grep 'NAME="Ubuntu"'
+if  uname="Linux"
 then
-	echo "this is ubuntu "
-	# Script for FailDns 
-	# Block all traffic on port 53
-	sudo iptables -A INPUT -p tcp -m tcp --dport 53 -j DROP
-	sudo iptables -A INPUT -p udp -m udp --dport 53 -j DROP
-elif cat /etc/*-release | grep 'NAME="Red Hat Enterprise Linux Server"'
-then
-	echo "this is redhat"
-	# Script for FailDns 
-	# Block all traffic on port 53
-	sudo iptables -A INPUT -p tcp -m tcp --dport 53 -j DROP
-	sudo iptables -A INPUT -p udp -m udp --dport 53 -j DROP
-elif cat /etc/*-release | grep 'NAME="CentOS Linux"'
-then
-	echo "this is centos"
+	echo "this is Linux"
 	# Script for FailDns 
 	# Block all traffic on port 53
 	sudo iptables -A INPUT -p tcp -m tcp --dport 53 -j DROP

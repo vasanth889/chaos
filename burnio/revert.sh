@@ -22,3 +22,4 @@ sudo pkill bash
 #kill /burn file
 sudo rm /burn
 
+
