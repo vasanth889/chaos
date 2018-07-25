@@ -18,6 +18,7 @@ NA
 on running apply.sh(insert corrupt % of packets along with apply.sh), first it will check the Operating system which is been used and will corrupt the network packets.
 
 eg. sh apply.sh 5%
+
 revert.sh will delete the corruption on the network packets.
 
 ### How to Run
