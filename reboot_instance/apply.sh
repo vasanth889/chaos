@@ -15,21 +15,12 @@
 #  limitations under the License.
 
 #os check
-if  cat /etc/*-release |grep 'NAME="Ubuntu"'
+if  uname="Linux"
 then
 	echo "this is ubuntu "
 	#shutdown and reboot
 	sudo shutdown -r now
-elif cat /etc/*-release | grep 'NAME="Red Hat Enterprise Linux Server"'
-then
-	echo "this is redhat"
-	#shutdown and reboot
-	sudo shutdown -r now
-elif cat /etc/*-release | grep 'NAME="CentOS Linux"'
-then
-	echo "this is centos"
-	#shutdown and reboot
-	sudo shutdown -r now
+
 else
 	echo "nothing matched"
 fi
